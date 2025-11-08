@@ -63,7 +63,6 @@ The application uses the Gemini API with the following configuration:
 The chatbot has special responses for certain queries:
 - "Who are you?" - Introduces itself as Chat Bot
 - "Who developed you?" - Lists the developer names
-- "Kon hain?" - Hindi for "Who are you?" with appropriate response
 
 ## Responsive Design
 
@@ -73,5 +72,6 @@ The application is fully responsive and works on:
 - Tablets
 
 ## License
+
 
 This project is for educational purposes and was developed by the team listed above.
