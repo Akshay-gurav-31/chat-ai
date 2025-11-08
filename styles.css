@@ -37,6 +37,9 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 body.dark-mode {
@@ -48,9 +51,11 @@ body.dark-mode {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     max-width: 100%;
     margin: 0 auto;
     box-shadow: var(--shadow);
+    position: relative;
 }
 
 /* Header Styles */
@@ -407,4 +412,31 @@ body.dark-mode {
     .message-input {
         font-size: 16px; /* Prevents zoom on Android */
     }
+    
+    /* Fix for Android Chrome address bar */
+    .container {
+        height: 100dvh; /* Dynamic viewport height */
+    }
+}
+
+/* Dynamic viewport fixes for mobile browsers */
+@supports (height: 100dvh) {
+    .container {
+        height: 100dvh;
+    }
+}
+
+@supports (height: -webkit-fill-available) {
+    .container {
+        height: -webkit-fill-available;
+    }
+}
+
+/* Fix for mobile browser viewport height issues */
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    height: -webkit-fill-available;
 }
