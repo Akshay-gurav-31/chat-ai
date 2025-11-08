@@ -32,11 +32,7 @@ A responsive web-based chat application that integrates with the Gemini AI API t
 
 This project was developed by:
 
-- Akash Sudhakar Narayankar
-- Sanika Suryaji Mohite
-- Gaurav Vidyadhar Minche
-- Kanishka Patel
-- Roshan Balvant Patil
+- Akshay Gurav
 
 ## Setup Instructions
 
@@ -75,3 +71,4 @@ The application is fully responsive and works on:
 
 
 This project is for educational purposes and was developed by the team listed above.
+
